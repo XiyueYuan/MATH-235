@@ -1,0 +1,10 @@
+my_folder/
+HW/
+Notes/Notice.md
+
+*.aux
+*.log
+*.pdf
+*.toc
+.DS_Store
+

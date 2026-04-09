@@ -163,6 +163,26 @@ $$
 E[T_x] = \frac{1}{\pi_{i, j}} = \frac{1456}{21}
 $$
 
+__Proposition 3. Detailed Balance__
+$$
+\pi_iP(i,j) = \pi_jP(j, i)
+$$
+This condition (local balance) guarantees a stationary distribution and implies time-reversibility.
+Proof. 
+$$
+\pi_iP(i,j) = \pi_jP(j, i)
+$$
+Therefore, 
+$$
+\sum_{i \in S}\pi_iP(i,j) = \pi_j\sum_{i \in S}P(j, i)
+$$
+Because $\sum_{i \in S}P(j, i) = 1$
+Therefore, we have 
+$$
+\sum_{i \in S}\pi_iP(i,j) = \pi_j
+$$
+which is the definition of the stationary distribution 
+
 ### Countably infinite state space
 Suppose that the state space $S$ is countably infinite (discrete, countable, but infinite)
 

@@ -110,6 +110,10 @@ T^2_{1, 2} = \sum_{z = 1}^{3}p^1(1, z)p^2(z, 2) = 0.37
 $$
 
 ### Recurrence and Transience 
+- $T_x = \inf\{n \ge 1: X_n = x\}$
+- $P_x(T_x < \infty) = 1$ if recurrent
+- $p_x(T_x < \infty) < 1$ if transient 
+
 __Definition 4.__ Two states, $x, y \in S$ __communicate__ if $\exists m, n \ge 0$, such that $p^n(x, y) > 0$ and $p^m(y, x) > 0$. In this case, we write $x \leftrightarrow y$.
 If $x, y \in S$ communicates, then they are 
 - Reflective: $x \leftrightarrow x$, since $p^0(x, x) = 1$

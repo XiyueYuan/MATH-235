@@ -182,6 +182,22 @@ $$
 \sum_{i \in S}\pi_iP(i,j) = \pi_j
 $$
 which is the definition of the stationary distribution 
+Hence, 
+$$
+P[X_0 = x_0, X_1 = x, ..., X_n = x_n] = P[X_n = x_0, X_{n - 1} = x_1, ..., X_0 = x_n]
+$$
+Proof: 
+$$
+\begin{aligned}
+P(X_0=x_0,\dots,X_n=x_n)
+&= \pi_{x_0}p(x_0,x_1)p(x_1,x_2)\cdots p(x_{n-1},x_n) \\
+&= \pi_{x_1}p(x_1,x_0)p(x_1,x_2)\cdots p(x_{n-1},x_n) \\
+&= \pi_{x_2}p(x_2,x_1)p(x_1,x_0)p(x_2,x_3)\cdots p(x_{n-1},x_n) \\
+&\quad \vdots \\
+&= \pi_{x_n}p(x_n,x_{n-1})p(x_{n-1},x_{n-2})\cdots p(x_1,x_0) \\
+&= P(X_n=x_n,X_{n-1}=x_{n-1},\dots,X_0=x_0).
+\end{aligned}
+$$
 
 ### Countably infinite state space
 Suppose that the state space $S$ is countably infinite (discrete, countable, but infinite)

@@ -153,7 +153,7 @@ Based on the definition of recurrent/ transient
 
 - $T_x = \inf\{n \ge 1: X_n = x\}$
 - $P_x(T_x < \infty) = 1$ if recurrent
-- $p_x(T_x < \infty) < 1$ if transient 
+- $P_x(T_x < \infty) < 1$ if transient 
 
 
 ### Queuing model 
@@ -305,6 +305,10 @@ Therefore, $\pi(x)$ is a stationary distribution, and the chain is __positive re
 $$
 B = 1 - \left(\frac{p}{1 - p}\right), \pi(x) = \left(1 - \frac{p}{1 - p}\right)\left(\frac{p}{1 - p}\right)^x
 $$
+
+•	$p<q$: positive recurrent
+•	$p=q$: null recurrent
+•	$p>q$: transient
 
 ### Random Walk on $\mathbb{Z}^d$
 - We view $\mathbb{Z}^d$ as a graph with edges joining all pairs of points $x, y$ with $|x - y| = 1$

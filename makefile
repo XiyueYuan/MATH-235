@@ -1,2 +1,2 @@
 convert:
-	jupyter nbconvert --to pdf HW/Pset2.ipynb
+	jupyter nbconvert --to pdf HW/Pset3.ipynb

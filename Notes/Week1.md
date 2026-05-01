@@ -59,7 +59,7 @@ $$
 
 __Proposition 1.__ 
 We define the n-step transition probabilities
-$$P_n(x,y) := P[X_n = y \mid X_0 = x]
+$$P^n(x,y) := P[X_n = y \mid X_0 = x]
 $$
 $\forall n, m \in \mathbb{N}, \forall x, y \in S$, 
 $$
@@ -72,7 +72,7 @@ P[X_{n + m} = y \mid \ X_0 = x] = \sum_{z \in S}P[X_{n + m} = y, X_n = z \mid X_
 $$
 
 $$
-\text{According to Total Probability Theory, }
+\text{According to Conditional Probability Theory, }
 \\
 P[A, B \mid C] = P[A \mid B, C] \cdot P[B \mid C]
 $$
@@ -95,7 +95,7 @@ $$
 
 __Definition 3.__ The __Transition Matrix__ is the $N \times N$ matrix $P$, where $$\sum_{j \in S}p(i, j) = 1$$
 
-__Example 5.__ Given transition matrix P, find $T^2_{1, 2}$
+__Example 5.__ Given transition matrix P, find $T^2_{1, 2}, S \in \{1, 2, 3\}$
 $$
 P = \begin{pmatrix}
 0.5 & 0.3 & 0.2 \\
@@ -106,7 +106,7 @@ $$
 
 Using CK-equation, we have $P^{n + m}(x, y) = \sum_{z \in S}p^n(x, z)p^m(z, y)$
 $$
-T^2_{1, 2} = \sum_{z = 1}^{3}p^1(1, z)p^2(z, 2) = 0.37
+T^2_{1, 2} = \sum_{z = 1}^{2}p^1(1, z)p^1(z, 2) = 0.37
 $$
 
 ### Recurrence and Transience 
@@ -171,7 +171,7 @@ $$
 P[X_n = y \ \text{for infinitely many n} \mid X_0 = x] = 1
 $$
 
-__Proposition 3.__ Assumei $S$ is finite, if $C$ is a transient communication class, then with probability 1 $X $ eventually leaves $C$ and never returns 
+__Proposition 3.__ Assume $S$ is finite, if $C$ is a transient communication class, then with probability 1 $X $ eventually leaves $C$ and never returns 
 $$
 P_x(\text{eventually leaves C and never returns}) = 1, x \in C
 $$

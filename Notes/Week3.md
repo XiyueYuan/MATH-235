@@ -18,12 +18,12 @@ $$
 p(x, 0) = \frac{1}{x + 2},\quad p(x, x + 1) = 1 - \frac{1}{x + 2}
 $$
 
-Assume $X_0 = 0$,
+Assume $X_0 = 0, T^+_0:= \inf\{n > 0: X_n = 0\}$,
 $$
-X_n = \prod_{i =0}^{n - 1}\frac{x + 1}{x + 2} 
+P(T^+_0 > n) = \prod_{i =0}^{n - 1}\frac{i + 1}{i + 2} = \frac{1}{n + 1} \implies P(T^+_0 = \infty) = 0
 $$ 
 
-Therefore, $X_n \le n$, and we have
+$X_n \le n$, and we have
 $$
 p(X_{n + 1} = 0 \mid X_n) = \frac{1}{X_n + 2} \ge \frac{1}{n + 2}
 $$
@@ -80,7 +80,7 @@ $$
 
 Hence, 
 $$
-P[X \ \text{hits } N \ \text{before } \ 0 \mid X_0  = x] = h(x) = \frac{\left(\frac{1 - p}{p}\right)^x - 1}{\left(\frac{1 - p}{p}\right)^N - 1}, \quad x\neq \frac12
+P[X \ \text{hits } N \ \text{before } \ 0 \mid X_0  = x] = h(x) = \frac{\left(\frac{1 - p}{p}\right)^x - 1}{\left(\frac{1 - p}{p}\right)^N - 1}, \quad p\neq \frac12
 $$
 
 When $x = \frac12$, 

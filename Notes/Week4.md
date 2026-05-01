@@ -223,3 +223,48 @@ $$
 E[(\tau_2 - \tau_1) + \tau_1 \mid \tau_1 > 3] = E[\tau_2 - \tau_1] + E[\tau_1 \mid \tau_1 > 3] = \frac13 + 3 + \frac13 = \frac{11}{3}
 $$ 
 
+### Gamma Distributioin 
+$$
+X \sim Gamma(k, \lambda)
+$$
+Describe the $k$th arrival time in a poisson distribution with $\lambda$
+$$
+E[\tau_k] = \frac{k}{\lambda}
+$$
+
+Exponential distribution describes the expected waiting time until the next arrival time in a Poisson process
+$$
+X_t \sim Poi(10t)
+$$
+
+This describes the number of calls by the time of $t$, then 
+$$
+T \sim Exp(10)
+$$
+
+This describes the waiting time until the next call
+$$
+E[T] = \frac{1}{10}
+$$
+
+Then if $$X \sim Poi(5)$$
+
+$$
+\tau_1 \sim exp(5), \quad E[\tau_1] = \frac15, \quad \tau_1 = W_1
+$$
+
+Then, 
+$$
+\tau_2 = W_1 + W_2, \quad \tau_k = W_1 + W_2 + ... + W_k
+$$
+
+$$
+\tau_k \sim Gamma(k, \lambda)
+$$
+
+The probability the next hour it will call is 
+$$
+1 - e^{-5}
+$$
+
+
